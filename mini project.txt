@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Yournameworks.com</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&displa y=swap" rel="stylesheet"> 
+</head> 
+<body> 
+    <header> 
+        <div class="container"> 
+            <h1>YOUR Name Works</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> 
+ 
+    <section id="about"> 
+        <div class="container"> 
+            <h2>About Our website</h2> 
+            <p>Welcome to Yournames.com! we are a passionate portfolio designers dedicated to bringing creative visions to life. Explore my work and see how I can help you achieve your goals!!!</p> 
+ 	    <ol> Showcase Work and Skills: It provides a platform to display samples of work, projects, or products. This is crucial for creatives such as artists, designers, photographers, writers, and developers to demonstrate their abilities and style. 
+ 	 	Establish Professional Presence: A well-designed portfolio website enhances professionalism and credibility. It acts as a digital resume, showcasing qualifications and career achievements in a visually appealing and organized manner. 
+ 	 	Attract Job Opportunities: For job seekers, a portfolio website can attract potential employers or clients who are searching for specific skills or talents. It can act as a magnet for job offers, freelance projects, or collaborations. 
+ 	 	Personal Branding: It allows individuals to create and manage their personal brand. By curating content and presenting themselves in a consistent and professional manner, they can shape how they are perceived by their audience. 
+ 	</ol> 
+        </div> 
+    </section> 
+ 
+    <section id="portfolio"> 
+        <div class="container"> 
+            <h2>Portfolio</h2> 
+            <div class="portfolio-item"> 
+                <img src="portfolio-item1.jpg" alt="Portfolio Item 1">                 <h3>Creating Resumes</h3> 
+                <p>We help in craeting your portfolios by getting your infromation from you.We would mostly sharing the informations and documents through the gmails and we promise that the infromations yours will not be shared to any third parties</p> 
+            </div> 
+            <div class="portfolio-item"> 
+                <img src="portfolio-item2.jpg" alt="Portfolio Item 2"> 
+                <h3>Sample Resume & Payments Methods </h3> 
+                <p>here,You can see the example resumes which are extremely proffessional & we make this resumes by good and taleted persons who are the authors of some famous books. 
+                 The payment can done after receicing the resume,method of payment is any mode of online transactions. 
+                   AFTER THE PAYMENT IS DONE SUCESSFULLY.we would send the passcode for the document through gmail. </p> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <section id="contact"> 
+        <div class="container"> 
+            <h2>Contact</h2> 
+            <form action="submit-form.php" method="POST"> 
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required> 
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required> 
+                <label for="message">Message:</label> 
+                <textarea id="message" name="message" rows="4" required></textarea> 
+                <button type="submit">Send</button> 
+            </form> 
+        </div> 
+    </section> 
+ 
+    <footer> 
+        <div class="container"> 
+            <p>&copy; 2024 yournameworks.com. All rights reserved.</p> 
+        </div> 
+    </footer> 
+</body> 
+</html> 
+4.2 CSS Styling (styles.css)  {     margin: 0;     padding: 0;     box-sizing: border-box; 
+} 
+ 
+body {     font-family: 'Roboto', sans-serif;     line-height: 1.6;     background-color: #f0f0f0;     color: #333; 
+} 
+ 
+.container {     max-width: 1200px;     margin: 0 auto;     padding: 0 20px; 
+} 
+ 
+header {     background-color: #333; 
+    color: #fff;     padding: 10px 0;     position: fixed;     width: 100%;     z-index: 1000; 
+} 
+ 
+header h1 {     font-size: 1.8rem; 
+} 
+ 
+nav ul {     list-style-type: none; 
+} 
+ 
+nav ul li {     display: inline-block;     margin-right: 20px; 
+} 
+ 
+nav ul li a {     color: #fff;     text-decoration: none;     font-size: 1.2rem; 
+} 
+ 
+nav ul li a:hover {     text-decoration: underline; 
+} 
+ 
+section {     padding: 80px 0;     text-align: center; 
+} 
+ 
+section h2 {     font-size: 2.5rem;     margin-bottom: 30px; 
+} 
+ 
+section p {     font-size: 1.1rem; 
+} 
+ 
+.portfolio-item {     margin-bottom: 40px; 
+} 
+ 
+.portfolio-item img {     max-width: 100%;     height: auto;     margin-bottom: 10px; 
+} 
+ 
+form {     max-width: 600px;     margin: 0 auto;     background-color: #fff;     padding: 20px;     border-radius: 5px;     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+ 
+form label {     display: block;     margin-bottom: 10px; 
+} 
+ 
+form input[type="text"], form input[type="email"], form textarea {     width: calc(100% - 20px);     padding: 10px;     margin-bottom: 15px;     border: 1px solid #ccc;     border-radius: 5px; 
+} 
+ 
+form button {     background-color: #333; 
+    color: #fff;     padding: 10px 20px;     border: none;     border-radius: 5px;     cursor: pointer;     font-size: 1.1rem; } form button:hover {     background-color: #555; 
+} 
